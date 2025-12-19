@@ -5,7 +5,7 @@ This project implements an autonomous vacuum cleaning agent that navigates a gri
 
 The project focuses on **algorithmic problem-solving, state-space search, and cost optimization**, rather than UI or machine learning.
 
----
+
 
 ## Features
 - Grid-based environment with walls and multiple goal states
@@ -14,7 +14,7 @@ The project focuses on **algorithmic problem-solving, state-space search, and co
 - Configurable cost functions and heuristics
 - Performance comparison across search strategies
 
----
+
 
 ## Search Algorithms Implemented
 - **Breadth-First Search (BFS)**
@@ -25,7 +25,7 @@ The project focuses on **algorithmic problem-solving, state-space search, and co
 
 Each algorithm explores the environment differently, highlighting tradeoffs between optimality, exploration cost, and efficiency.
 
----
+
 
 ## Cost Functions & Heuristics
 ### Cost Functions
