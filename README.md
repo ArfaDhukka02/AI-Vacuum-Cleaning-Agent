@@ -33,6 +33,13 @@ Each algorithm explores the environment differently, highlighting tradeoffs betw
 - Turn-aware cost (penalizes frequent direction changes)
 - Directional bias costs (e.g., stay-left, stay-up strategies)
 
+## Structure
+agents.py          # Agent logic and movement behavior  
+search.py          # Search algorithms and node expansion  
+vacuum_search.py   # Environment setup and execution entry point  
+utils.py           # Helper utilities and shared data structures  
+WeightedDFS.txt    # Pseudocode for weighted DFS variant
+
 ### Heuristics
 - **Manhattan Distance**
 - **Euclidean Distance**
