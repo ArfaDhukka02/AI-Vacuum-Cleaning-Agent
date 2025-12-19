@@ -46,6 +46,3 @@ WeightedDFS.txt    # Pseudocode for weighted DFS variant
 
 These are used to guide informed search strategies and reduce unnecessary exploration.
 
----
-
-## Project Structure
