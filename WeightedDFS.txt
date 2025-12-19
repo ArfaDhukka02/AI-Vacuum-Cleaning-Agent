@@ -1,0 +1,19 @@
+Function WeightedDFS(problem):
+    node ← Node(STATE=problem.INITIAL)
+    stack ← [(node, 0)]  # Stack stores start node with first element (node, cumulative_cost), 
+    explored ←  Empty set to track visited nodes
+
+    While not Is-Empty(stack) do:
+        node, cost ← stack.pop()  # Pop the top (node, cost) from the stack
+        If problem.Is-GOAL (node.STATE) then Return node, explored  # Return the solution node and explored states
+        Add explored[node.STATE ]  # add current state as explored
+        For each child in EXPAND(problem.node) do:
+            child_cost ← cost + ACTION-COST Pop(stack)# Calculate cumulative cost
+            If child.STATE not in explored and child.STATE not in stack:
+                Add (child, child_cost) to stack
+            For each (existing_node, existing_cost) in stack: 
+If existing_node.STATE is equal to child.STATE AND child_cost < existing_cost then 
+Replace (existing_node, existing_cost) with (child, child_cost) in stack Break 
+# Replace the node in the stack with the cheaper version
+
+    Return None, explored 
